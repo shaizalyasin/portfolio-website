@@ -1,18 +1,37 @@
-import React from 'react'
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="min-h-[60vh] flex flex-col justify-center items-start gap-6 py-12">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-teal-800">Hi — I’m Muhammad. I build AI & data-driven systems.</h1>
-      <p className="text-lg text-slate-700 max-w-2xl">
-        MSc Data Science (FAU) student with experience in quantitative development, automation, and applied
-        machine learning. I enjoy turning data into actionable insights and building production-ready
-        analytics and AI systems.
+    <section className="flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-br from-teal-100 to-white py-12">
+      <img
+        src="/profile.jpg"
+        // alt="Muhammad Shaizal Yasin"
+        className="w-80 h-80 rounded-full shadow-lg mb-6 object-cover"
+      />
+      <h1 className="text-4xl font-extrabold text-teal-800 mb-2">Muhammad Shaizal Yasin</h1>
+      <h2 className="text-xl text-teal-600 mb-4">Quantitative Developer & Data Scientist</h2>
+      <p className="max-w-xl text-center text-slate-700 mb-6">
+        Building robust data-driven solutions in finance, AI, and web. Experienced in Python, TensorFlow, and quantitative analysis. Passionate about mentoring, research, and impactful technology.
       </p>
-      <div className="flex gap-4">
-        {/* <a href="#projects" className="px-4 py-2 bg-teal-700 text-white rounded-md shadow">View projects</a> */}
-        {/* <a href="/M_Shaizal_Yasin_CV.pdf" download className="px-4 py-2 border border-amber-400 text-amber-600 rounded-md">Download CV</a> */}
+      <div className="flex gap-6 mb-4">
+        <a href="https://github.com/shaizalyasin" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:text-teal-900 text-2xl">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/shaizal-yasin/" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:text-teal-900 text-2xl">
+          <FaLinkedin />
+        </a>
+        <a href="mailto:shaizalyasin0713@gmail.com" className="text-teal-700 hover:text-teal-900 text-2xl">
+          <FaEnvelope />
+        </a>
       </div>
+      <a
+        href="/Muhammad-Shaizal-Yasin-CV.pdf"
+        target="_blank"
+        className="px-6 py-2 bg-teal-700 text-white rounded-full shadow hover:bg-teal-800 transition"
+      >
+        Download Resume
+      </a>
     </section>
-  )
+  );
 }

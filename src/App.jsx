@@ -15,14 +15,31 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white text-slate-900">
       <Navbar />
       <main className="max-w-6xl mx-auto px-6">
-        <Hero />
-        <Projects />
-        <Skills />
-        <Education />
-        <Experience />
-        <Volunteering />
-        <Certifications />
-        <Contact />
+        {/* Add section wrappers with matching IDs and top padding for smooth navbar experience */}
+        <section id="hero" className="pt-16">
+          <Hero />
+        </section>
+        <section id="projects" className="pt-16">
+          <Projects />
+        </section>
+        <section id="education" className="pt-16">
+          <Education />
+        </section>
+        <section id="experience" className="pt-16">
+          <Experience />
+        </section>
+        <section id="skills" className="pt-16">
+          <Skills />
+        </section>
+        <section id="volunteering" className="pt-16">
+          <Volunteering />
+        </section>
+        <section id="certifications" className="pt-16">
+          <Certifications />
+        </section>
+        <section id="contact" className="pt-16">
+          <Contact />
+        </section>
       </main>
       <Footer />
     </div>
